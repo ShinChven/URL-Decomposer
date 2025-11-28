@@ -1,0 +1,5 @@
+{
+  "name": "URL Decomposer",
+  "description": "A smart tool to parse, filter, and reconstruct URLs by decomposing them into their constituent parts.",
+  "requestFramePermissions": []
+}
