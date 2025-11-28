@@ -1,20 +1,34 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# URL Decomposer
 
-# Run and deploy your AI Studio app
+A powerful, interactive tool designed to break down, analyze, and reconstruct URLs. This application allows developers and power users to easily debug link structures, modify query parameters, and generate clean URLs.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1bwsu7QD8KHTpE3fQWLak-346QwFBil0p
+- **Deep Parsing**: Instantly decomposes URLs into their fundamental components:
+  - Protocol
+  - Auth (Username/Password)
+  - Hostname
+  - Port
+  - Pathname
+  - Query Parameters (individually broken down)
+  - Hash/Fragment
+- **Interactive Control**: Toggle specific components on or off via checkboxes to construct a new URL dynamically.
+- **In-Place Editing**: Modify the value of any component (e.g., change a query param value or path segment) directly within the table.
+- **Real-Time Reconstruction**: The result preview updates instantly as you toggle or edit parts.
+- **Sticky Preview**: The generated URL remains visible while scrolling through long lists of parameters.
+- **One-Click Copy**: Easily copy the final reconstructed URL to your clipboard.
 
-## Run Locally
+## How to Use
 
-**Prerequisites:**  Node.js
+1. **Input**: Paste any URL into the search bar and click "Analyze".
+2. **Edit**: 
+   - Use the **checkboxes** to keep or remove specific parts of the URL.
+   - Type into the **Value** input fields to change specific parameters or paths.
+3. **Export**: Click the copy icon in the sticky sidebar to get your new URL.
 
+## Tech Stack
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- **Frontend**: React 19
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Language**: TypeScript
